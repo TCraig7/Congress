@@ -5,7 +5,7 @@ class MemberFacade
   end
 
   def members
-    pro_publica_member_service.member_data(@chamber, @state).map do |member_data|
+    pro_publica_member_service.state_members_data(@chamber, @state).map do |member_data|
       Member.new(member_data)
     end
   end
