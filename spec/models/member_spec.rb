@@ -6,7 +6,7 @@ describe Member, type: :model do
                    role: "Senator",
                    party: "D",
                    twitter_id: "painterbob",
-                   facebook: "SenBobRoss",
+                   facebook_account: "SenBobRoss",
                    seniority: "1",
                    next_election: "2020"}
 
