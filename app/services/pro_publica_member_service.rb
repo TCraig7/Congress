@@ -1,6 +1,6 @@
 class ProPublicaMemberService
-  def house_member_data(chamber, state)
-    get_json("/congress/v1/members/#{chamber}/#{state}/current.json")
+  def member_data(chamber, state)
+    get_json("/congress/v1/members/#{chamber}/#{state}/current.json")[:results]
   end
 
   private

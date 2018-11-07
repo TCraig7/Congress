@@ -13,14 +13,13 @@ describe ProPublicaMemberService do
       chamber = 'house'
       state = 'CO'
 
-      response = propublica.house_member_data(chamber, state)
+      response = propublica.member_data(chamber, state)
 
-      expect(response).to be_a(Hash)
-      expect(response).to have_key(:results)
-      expect(response[:results].first).to have_key(:name)
-      expect(response[:results].first).to have_key(:role)
-      expect(response[:results].first).to have_key(:party)
-      expect(response[:results].first).to have_key(:next_election)
+      expect(response).to be_a(Array)
+      expect(response.first).to have_key(:name)
+      expect(response.first).to have_key(:role)
+      expect(response.first).to have_key(:party)
+      expect(response.first).to have_key(:next_election)
     end
   end
 end
