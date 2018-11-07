@@ -1,5 +1,13 @@
 require 'rails_helper'
 
-RSpec.describe Member, type: :model do
-  pending "add some examples to (or delete) #{__FILE__}"
+describe Member, type: :model do
+  before(:each) do
+    chamber = 'house'
+    state = 'CO'
+    @member = Member.new(chamber, state)
+  end
+
+  it 'exists' do
+    expect(@member).to be_a(Member)
+  end
 end
