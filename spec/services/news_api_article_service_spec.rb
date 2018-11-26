@@ -14,8 +14,15 @@ describe NewsApiArticleService do
       last_name = 'degette'
 
       response = news.articles(first_name, last_name)
-      
+
       expect(response).to be_a(Array)
+      expect(response[0]).to have_key(:source)
+      expect(response[0]).to have_key(:author)
+      expect(response[0]).to have_key(:title)
+      expect(response[0]).to have_key(:description)
+      expect(response[0]).to have_key(:url)
+      expect(response[0]).to have_key(:urlToImage)
+      expect(response[0]).to have_key(:publishedAt)
     end
   end
 end
