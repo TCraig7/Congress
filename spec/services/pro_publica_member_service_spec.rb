@@ -30,12 +30,12 @@ describe ProPublicaMemberService do
 
       response = propublica.member_data(member_id)
 
-      expect(response).to be_a(Array)
-      expect(response[0]).to have_key(:first_name)
-      expect(response[0]).to have_key(:member_id)
-      expect(response[0]).to have_key(:current_party)
-      expect(response[0]).to have_key(:roles)
-      expect(response[0][:roles][0]).to have_key(:committees)
+      expect(response).to be_a(Hash)
+      expect(response).to have_key(:first_name)
+      expect(response).to have_key(:member_id)
+      expect(response).to have_key(:current_party)
+      expect(response).to have_key(:roles)
+      expect(response[:roles][0]).to have_key(:committees)
     end
   end
 end
