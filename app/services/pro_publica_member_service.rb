@@ -4,7 +4,7 @@ class ProPublicaMemberService
   end
 
   def member_data(member_id)
-    get_json("/congress/v1/members/#{member_id}.json")[:results]
+    get_json("/congress/v1/members/#{member_id}.json")[:results][0]
   end
 
   private
