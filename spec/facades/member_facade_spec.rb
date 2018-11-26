@@ -37,17 +37,4 @@ describe MemberFacade do
       expect(member_facade.member(member_id).twitter).to eq('RepDianaDeGette')
     end
   end
-
-  it 'has articles' do
-    VCR.use_cassette('member_facade_articles') do
-      first_name = 'diana'
-      last_name = 'degette'
-
-      member_facade = MemberFacade.new
-
-      expect(member_facade.articles(first_name, last_name)).to be_a(Array)
-      expect(member_facade.articles(first_name, last_name).first).to be_a(Article)
-      expect(member_facade.articles(first_name, last_name).last).to be_a(Article)
-    end
-  end
 end
