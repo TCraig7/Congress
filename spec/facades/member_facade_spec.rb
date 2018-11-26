@@ -28,7 +28,13 @@ describe MemberFacade do
 
       member_facade = MemberFacade.new
 
-      expect(member_facade.member(member_id)).to be_a(Array)
+      expect(member_facade.member(member_id)).to be_a(IndividualMember)
+      expect(member_facade.member(member_id).id).to eq('D000197')
+      expect(member_facade.member(member_id).first_name).to eq('Diana')
+      expect(member_facade.member(member_id).last_name).to eq('DeGette')
+      expect(member_facade.member(member_id).party).to eq('D')
+      expect(member_facade.member(member_id).facebook).to eq('DianaDeGette')
+      expect(member_facade.member(member_id).twitter).to eq('RepDianaDeGette')
     end
   end
 end
