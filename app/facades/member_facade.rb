@@ -9,9 +9,19 @@ class MemberFacade
     IndividualMember.new(pro_publica_members_service.member_data(member_id))
   end
 
+  def articles(first_name, last_name)
+    news_api_articles_service.articles(first_name, last_name).map do |article|
+      Article.new(article)
+    end
+  end
+
   private
 
   def pro_publica_members_service
     ProPublicaMemberService.new
+  end
+
+  def news_api_articles_service
+    NewsApiArticleService.new
   end
 end
