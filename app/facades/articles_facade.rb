@@ -6,7 +6,7 @@ class ArticlesFacade
   end
 
   private
-  
+
   def news_api_articles_service
     NewsApiArticleService.new
   end
