@@ -1,5 +1,6 @@
 class Api::V1::MembersController < ApplicationController
   def index
-    render json: MemberFacade.new(params[:chamber], params[:state]).members
+    member_facade = MemberFacade.new
+    render json: member_facade.members(params[:chamber], params[:state])
   end
 end
