@@ -6,9 +6,7 @@ class MemberFacade
   end
 
   def member(member_id)
-    pro_publica_members_service.member_data(member_id).map do |member_data|
-      IndividualMember.new(member_data)
-    end
+    IndividualMember.new(pro_publica_members_service.member_data(member_id))
   end
 
   private
