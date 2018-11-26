@@ -1,5 +1,6 @@
-class Member
-  attr_reader     :name,
+class ChamberMember
+  attr_reader     :id,
+                  :name,
                   :role,
                   :party,
                   :twitter,
@@ -8,6 +9,7 @@ class Member
                   :next_election
 
   def initialize(member_data)
+    @id = member_data[:id]
     @name = member_data[:name]
     @role = member_data[:role]
     @party = member_data[:party]

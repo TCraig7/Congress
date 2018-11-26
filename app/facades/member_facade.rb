@@ -1,18 +1,17 @@
 class MemberFacade
-  def initialize(chamber, state)
-    @chamber = chamber
-    @state = state
+  def members(chamber, state)
+    pro_publica_members_service.state_members_data(chamber, state).map do |members_data|
+      ChamberMember.new(members_data)
+    end
   end
 
-  def members
-    pro_publica_member_service.member_data(@chamber, @state).map do |member_data|
-      Member.new(member_data)
-    end
+  def member(member_id)
+    IndividualMember.new(pro_publica_members_service.member_data(member_id))
   end
 
   private
 
-  def pro_publica_member_service
+  def pro_publica_members_service
     ProPublicaMemberService.new
   end
 end
