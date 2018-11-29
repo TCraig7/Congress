@@ -14,6 +14,7 @@ gem 'jbuilder', '~> 2.5'
 gem 'faraday'
 gem 'figaro'
 gem 'fast_jsonapi'
+gem 'rack-cors', require: 'rack/cors'
 gem 'rspec-rails'
 
 gem 'bootsnap', '>= 1.1.0', require: false
