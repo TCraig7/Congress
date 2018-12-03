@@ -1,7 +1,7 @@
 # Congress
 
 ## About
-Congress is a back-end project built on Ruby on Rails v. 5.2.1 and Ruby 2.4.1. It pulls in data from the [ProPublica](https://projects.propublica.org/api-docs/congress-api/members/) Congress API and allows you to search for congresspeople based on state and chamber. This application also creates an endpoint to find news articles by a representatives's name. Congress is fully tested using RSpec.
+Congress is a back-end project built on Ruby on Rails v. 5.2.1 and Ruby 2.4.1. It pulls in data from the [ProPublica](https://projects.propublica.org/api-docs/congress-api/members/) Congress API and allows you to search for congresspeople based on state and chamber. This application also creates an endpoint to find news articles by a representatives's name, which pulls from the [News API](https://newsapi.org/). Congress is fully tested using RSpec.
 
 Link to application: [Congress](https://thecongresstracker.herokuapp.com/)
 
@@ -9,7 +9,7 @@ Link to application: [Congress](https://thecongresstracker.herokuapp.com/)
 This application does not have a landing page, and so the first page you will see will show a 404 error. This is expected. As there is no front end to this project, all navigation must be done via the address bar.
 
 ### Endpoints
-*** To find all members for a state: ***
+***To find all members for a state:***
 
 Type in the URL
 
@@ -27,7 +27,7 @@ will return information for all members of the United States House of Representa
 
 You may substitute 'senate' for house in the above URL, and any state abbreviation for 'CO'.
 
-*** To find an individual member: ***
+***To find an individual member:***
 
 Type in the URL
 
@@ -43,7 +43,7 @@ https://thecongresstracker.herokuapp.com/api/v1/members/D000197
 
 will return information for Congresswoman Diana DeGette. The ID of the congressperson may be found in the information returned by making the API call to find all members for a state.
 
-*** Articles ***
+***Articles***
 
 Type in the URL
 
