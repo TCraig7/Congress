@@ -17,13 +17,17 @@ Type in the URL
 https://thecongresstracker.herokuapp.com/api/v1/members
 ```
 
-and then the parameters you want. For example:
+and then the parameters you want. 
+
+For example:
 
 ```
 https://thecongresstracker.herokuapp.com/api/V1/members?chamber=house&state=CO
 ```
 
 will return information for all members of the United States House of Representatives for the State of Colorado.
+
+![image](https://user-images.githubusercontent.com/36015215/49394106-47ae7680-f6f0-11e8-8eb3-ae5014bd4a52.png)
 
 You may substitute 'senate' for house in the above URL, and any state abbreviation for 'CO'.
 
@@ -35,13 +39,17 @@ Type in the URL
 https://thecongresstracker.herokuapp.com/api/v1/members/ID_NUMBER
 ```
 
-and give it the ID of the congressperson you want. For example:
+and give it the ID of the congressperson you want. 
+
+For example:
 
 ```
 https://thecongresstracker.herokuapp.com/api/v1/members/D000197
 ```
 
 will return information for Congresswoman Diana DeGette. The ID of the congressperson may be found in the information returned by making the API call to find all members for a state.
+
+![image](https://user-images.githubusercontent.com/36015215/49394122-5137de80-f6f0-11e8-8ee4-062c1693c35f.png)
 
 ***Articles***
 
@@ -59,6 +67,8 @@ https://thecongresstracker.herokuapp.com/api/v1/articles?first_name=diana&last_n
 
 will return the 20 most recent news articles about Colorado Congresswoman Diana DeGette.
 
+![image](https://user-images.githubusercontent.com/36015215/49394208-7f1d2300-f6f0-11e8-8764-250b11e4d95e.png)
+
 ## How to run locally
 Clone down the repository to your local machine.
 
@@ -71,17 +81,17 @@ To start a local server, type ``rails s`` in the terminal.
 ## Gems Used
 ### Production
 
-* pg, '>= 0.18', '< 2.0'
-* puma, '~> 3.11'
-* sass-rails, '~> 5.0'
-* uglifier, '>= 1.3.0'
-* coffee-rails, '~> 4.2'
-* turbolinks, '~> 5'
-* jbuilder, '~> 2.5'
+* pg
+* puma
+* sass-rails
+* uglifier
+* coffee-rails
+* turbolinks
+* jbuilder
 * faraday
 * figaro
 * fast_jsonapi
-* rack-cors, require: 'rack/cors'
+* rack-cors
 * rspec-rails
 
 ### Development/Test
