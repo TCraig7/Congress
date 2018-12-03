@@ -5,6 +5,8 @@ Congress is a back-end project built on Ruby on Rails v. 5.2.1 and Ruby 2.4.1. I
 
 Link to application: [Congress](https://thecongresstracker.herokuapp.com/)
 
+A front-end application built using this API can be found here: [Representative Tracker](https://github.com/TCraig7/RepresentativeTracker)
+
 ## How to use
 This application does not have a landing page, and so the first page you will see will show a 404 error. This is expected. As there is no front end to this project, all navigation must be done via the address bar.
 
@@ -29,7 +31,7 @@ will return information for all members of the United States House of Representa
 
 ![image](https://user-images.githubusercontent.com/36015215/49394106-47ae7680-f6f0-11e8-8eb3-ae5014bd4a52.png)
 
-You may substitute 'senate' for house in the above URL, and any state abbreviation for 'CO'.
+You may substitute 'senate' for 'house' in the above URL, and any state abbreviation for 'CO'.
 
 ***To find an individual member:***
 
