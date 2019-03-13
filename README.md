@@ -24,7 +24,7 @@ and then the parameters you want.
 For example:
 
 ```
-https://thecongresstracker.herokuapp.com/api/V1/members?chamber=house&state=CO
+https://thecongresstracker.herokuapp.com/api/v1/members?chamber=house&state=CO
 ```
 
 will return information for all members of the United States House of Representatives for the State of Colorado.
