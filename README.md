@@ -3,8 +3,6 @@
 ## About
 Congress is a back-end project built on Ruby on Rails v. 5.2.1 and Ruby 2.4.1. It pulls in data from the [ProPublica](https://projects.propublica.org/api-docs/congress-api/members/) Congress API and allows you to search for congresspeople based on state and chamber. This application also creates an endpoint to find news articles by a representatives's name, which pulls from the [News API](https://newsapi.org/). Congress is fully tested using RSpec.
 
-Link to application: [Congress](https://thecongresstracker.herokuapp.com/)
-
 A front-end application built using this API can be found here: [Representative Tracker](https://github.com/TCraig7/RepresentativeTracker)
 
 ## How to use
